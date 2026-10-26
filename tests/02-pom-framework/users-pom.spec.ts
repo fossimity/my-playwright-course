@@ -10,7 +10,7 @@ import { UserFormPage } from '../../pages/UserFormPage';
 // Create a logical test suite block to group all LoanApp user management test scenarios together
 test.describe('SmartBank - User Management Workflows @smoke @regression', () => {
 
-  test.describe.configure({ mode: 'serial' });
+  // test.describe.configure({ mode: 'serial' });
 
 // Shared Login Data
 const branchName = 'Alamo';

@@ -10,7 +10,7 @@ import { CustomerFormPage } from '../../pages/CustomerFormPage';
 // Group all Customer lifecycle tests into one test suite
 test.describe('Customer Management - POM @smoke @regression', () => {
 
-    test.describe.configure({ mode: 'serial' });
+    // test.describe.configure({ mode: 'serial' });
 
     // Shared Login Data
 const branchName = 'Alamo';
