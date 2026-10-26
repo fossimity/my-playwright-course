@@ -19,13 +19,13 @@ export default defineConfig({
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Allow test.only during local execution */
-  forbidOnly: false,
+  forbidOnly: !!process.env.CI,
 
     timeout: 30000,
     /* Retry a failed test once */
-    retries: 1,
+    retries: process.env.CI ? 2 : 1,
     /* Automatically determine the number of workers */
-    workers: undefined,
+    workers: process.env.CI ? 1 : undefined,
     expect: {
       timeout: 5000,
 },
