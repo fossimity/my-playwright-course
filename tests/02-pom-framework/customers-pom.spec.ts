@@ -121,7 +121,7 @@ await expect(branchHeader).toBeVisible();
 await dashboardPage.clickLogout();
 
 // Verify the login screen is displayed
-await expect(page.getByRole('button', { name: 'Sign in' })).toBeVisible();
+await expect(page.getByRole('button', { name: 'Fake button' })).toBeVisible();
 
 
 });
